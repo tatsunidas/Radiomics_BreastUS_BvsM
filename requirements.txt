@@ -1,0 +1,8 @@
+streamlit==1.3.1
+numpy==1.21.5
+opencv-python==4.5.5.62
+pickleshare==0.7.5
+pandas==1.3.5
+pyradiomics==3.0.1
+SimpleITK==2.1.1
+six==1.16.0
