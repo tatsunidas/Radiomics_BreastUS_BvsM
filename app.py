@@ -103,7 +103,7 @@ def do_predict(loaded_model=None, img_path="", mask_path="", norm=True, scaler_m
             title += "ans.malignant, success, "
         else:
             title += "ans.malignant, error, "
-    title += str(round(proba[0][int(ans)],2))+" %"
+    title += str(round(proba[0][int(ans)],3)*100)+" %"
     pred_res_string = title
     result = st.empty()
     result.write(pred_res_string)
