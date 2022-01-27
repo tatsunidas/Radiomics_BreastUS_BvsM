@@ -40,7 +40,7 @@ def get_features(img_path=None, mask_path=None, norm=True):
     settings['label'] = 1
     settings['force2D'] = True
     # settings['correctMask'] = True #
-    extractor = featureextractor.RadiomicsFeatureExtractor(*settings)
+    extractor = featureextractor.RadiomicsFeatureExtractor(**settings)
     mask = cv2.imread(mask_path) # BGR
     if mask is None:
         raise ValueError('Mask checks failed when image loading...')
